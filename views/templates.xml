@@ -14,7 +14,7 @@
         <template id="gtm_body" inherit_id="web.frontend_layout">
             <xpath expr="//div[@id='wrapwrap']" position="before">
                 <noscript><iframe t-att-src="('https://www.googletagmanager.com/ns.html?id=' + website.google_tag_manager_key)"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                height="0" width="0" style="display:none;visibility:hidden" t-if="website and website.google_tag_manager_key"></iframe></noscript>
             </xpath>
         </template>
         
