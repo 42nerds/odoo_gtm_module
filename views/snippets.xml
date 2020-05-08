@@ -26,8 +26,8 @@
     </template>
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
         <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
-            <t t-snippet="cookiefirst.snippet_cookie_policy"
-               t-thumbnail="/cookiefirst/static/src/img/ui/s_alert.png"/>
+            <t t-snippet="odoo_gtm_module.snippet_cookie_policy"
+               t-thumbnail="/odoo_gtm_module/static/src/img/ui/s_alert.png"/>
         </xpath>
     </template>
   </data>
