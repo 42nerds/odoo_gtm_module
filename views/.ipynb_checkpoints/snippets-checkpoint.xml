@@ -1,0 +1,34 @@
+<odoo>
+  <data>
+    <template id="snippet_cookie_policy" name="cookie policy">
+      <section class="pt32 pb32" data-name="Title">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+              <h1 class="s_title_default">
+                <font style="font-size: 62px;" class="text-alpha">
+                  <b>Cookie-Erklärung</b>
+                </font>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt32 pb32" data-name="Text block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 pt32 pb32">
+              <div id="cookiefirst-policy-page"></div>
+            </div>
+          </div>
+        </div>s
+      </section>
+    </template>
+    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="cookiefirst.snippet_cookie_policy"
+               t-thumbnail="/cookiefirst/static/src/img/ui/s_alert.png"/>
+        </xpath>
+    </template>
+  </data>
+</odoo>
